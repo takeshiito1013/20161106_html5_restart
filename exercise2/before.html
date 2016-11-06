@@ -5,22 +5,31 @@
 	<title>Document</title>
 </head>
 <body>
-	<div id="header">
+	<header id="header">
 		<h1>ブログ記事ページ</h1>
-	</div>
+	</header>
 	
-	<div id="content">
-		<h2>渋谷の美味しいイタリアンカフェ: Caffé Laguna</h2>
-		<p>投稿日: 2016/5/1</p>
-		<p>渋谷駅から徒歩3分の場所にあるCaffé Lagunaは、私 Hana がおすすめするイタリアンカフェの名店だ。</p>
-		<h3>今回紹介したお店へのアクセス</h3>
-		<p>東京都渋谷区◯◯町1-2-1 渋谷Plus+ビル1F<br>
-		電話: 03-0000-1111</p>
-		<p>投稿者: <a href="/author/hana">Hana</a></p>
-	</div>
+	<main id="content">
+	    <article>
+            <!-- article内にheader, footerを入れると構造が分かりやすくなる。 -->
+	        <header>
+		        <h2>渋谷の美味しいイタリアンカフェ: Caffé Laguna</h2>
+                <!-- HTML5ではtimeタグを使って時間を表現出来る。datetimeを使うと、漢数字なども検索エンジン等が理解できる形にできる。これを書くと、投稿日がブラウザに表示される。Googleさんが取得してくれる。 -->
+		        <p>投稿日: <time datetime="2016-05-01">2016/5/1</time></p>
+		    </header>
+		    <p>渋谷駅から徒歩3分の場所にあるCaffé Lagunaは、私 Hana がおすすめするイタリアンカフェの名店だ。</p>
+		    <h3>今回紹介したお店へのアクセス</h3>
+            <!-- article配下にaddressタグを使うと、記事の投稿者の住所を表すことになる。使い分け注意。-->
+		    <p>東京都渋谷区◯◯町1-2-1 渋谷Plus+ビル1F<br>
+		    電話: 03-0000-1111</p>
+		    <footer>
+		        <address>投稿者: <a href="/author/hana">Hana</a></address>
+		    </footer>
+		</article>
+	</main>
 	
-	<div id="footer">
-		<p>©2016 Stocker.jp</p>
-	</div>
+	<footer id="footer">
+		<p class="copyright"><small>©2016 Stocker.jp</small></p>
+	</footer>
 </body>
 </html>

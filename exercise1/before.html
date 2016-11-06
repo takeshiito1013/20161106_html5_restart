@@ -5,16 +5,24 @@
 	<title>海外長編小説の世界</title>
 </head>
 <body>
-	<div id="header">
+	<header id="header">
 		<h1>海外長編小説の世界</h1>
-	</div>
-	<div id="content">
-		<h2>白鯨</h2>
-		<p>白鯨（Moby-Dick）はアメリカの小説家ハーマン・メルヴィルの長編小説である。</p>
-		<p>1851年にイギリスで発売された初版のタイトルは "The Whale" であった。</p>
-	</div>
-	<div id="footer">
-		<address>©2016 海外長編小説の世界</address>
-	</div>
+	</header>
+	<main id="content">
+		<article>    
+		    <h2>白鯨</h2>
+            <!-- iタグにlangを指定して言語を明記。-->
+            <!-- 斜体以外を指定したい場合はCSSを使うこと。-->
+		    <p>白鯨（<i lang="en">Moby-Dick</i>）はアメリカの小説家ハーマン・メルヴィルの長編小説である。</p>
+		    <p>1851年にイギリスで発売された初版のタイトルは <i lang="en">"The Whale"</i> であった。</p>
+        </article>
+	</main>
+	<footer id="footer">
+        <!-- addressタグは著作権情報の表記には使わない。適切なのはsmallタグ。pタグでネストするのが一般的。	    -->
+        <!-- <address>©2016 海外長編小説の世界</address>    -->
+       <p class="copyright">
+           <small>©2016 海外長編小説の世界</small>
+        </p>
+    </footer>
 </body>
 </html>

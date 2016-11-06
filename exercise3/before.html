@@ -10,27 +10,37 @@
 		.box {
 			border: solid 1px #ccc;
 		}
+        .hidden{
+            /* emmetのショートカット。「d:n」と書いてTab押すと↓に変換される。           */
+            display: none;
+        }
 	</style>
 </head>
 <body>
-	<h1>ロゴ</h1>
+    <header>
+    	<h1>ロゴ</h1>
+    </header>
+    
+	<nav id="nav">
+        <!--  navはセクショニングコンテンツのため、見出しはつけるけどスタイルで消す。二度手間だけどそーゆールール。 -->
+        <h2 class="hidden">Navigation</h2>
+		    <ul>
+			    <li>Home</li>
+			    <li>Product</li>
+			    <li>Company</li>
+			    <li>Contact</li>
+		    </ul>
+	</nav>
 	
-	<div id="nav">
-		<ul>
-			<li>Home</li>
-			<li>Product</li>
-			<li>Company</li>
-			<li>Contact</li>
-		</ul>
-	</div>
-	
-	<h2>新着記事</h2>
-	<div class="box">
-		<ul>
-			<li>記事タイトル</li>
-			<li>記事タイトル</li>
-			<li>記事タイトル</li>
-		</ul>
-	</div>
+	<section>
+	    <h2>新着記事</h2>
+	    <div class="box">
+	    	<ul>
+	    		<li>記事タイトル</li>
+	    		<li>記事タイトル</li>
+	    		<li>記事タイトル</li>
+	    	</ul>
+	    </div>
+	</section>
 </body>
 </html>
